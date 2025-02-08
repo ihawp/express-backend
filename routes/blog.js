@@ -20,7 +20,8 @@ router.get('/:id', (req, res) => {
         .then(response => {
             response = response[0];
             res.render('blog-post', { id: response.id, title: response.title, content: response.content, timestamp: response.timestamp});
-        });
+        })
+        .catch(error => console.error(error));
 
 });
 

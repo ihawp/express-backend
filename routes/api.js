@@ -2,13 +2,7 @@ const express = require('express');
 
 const mysql = require('mysql2');
 
-const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'blog',
-    port: 3306
-};
+const dbConfig = require('../middleware/dbconfig');
 
 const pool = mysql.createPool(dbConfig);
 
@@ -33,8 +27,7 @@ router.get('/blog/:id', (req, res) => {
 
     pool.query(query, (error, results) => {
         if (error) {
-            console.error('Error fetching data:', error);
-            return res.status(500).json({ error: 'Internal Server Error' });
+            return res.status(500).json({ id: 'Internal Server Error' });
         }
         res.json(results);
     });
