@@ -2,13 +2,10 @@ extends layout
 
 block content
     header
-        h1 Blog
+        h1 Blog for ihawp.com
     section
-        h2 Recent Posts
-
+        h2 Recent Posts:
+        ul
         each item in content
-            p= item.id
-
-
-
-    script(src='../javascripts/pug-blog.js' type='module')
+            li
+                a(href=`https://ihawp.com/blog/${item.id}`)= item.title

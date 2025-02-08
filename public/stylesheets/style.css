@@ -8,6 +8,18 @@ html {
 :root {
   --1: #222222;
   --2: #fff;
+  --3: #777;
+}
+
+/* Color */
+.c-1 {
+  color: var(--1);
+}
+.c-2 {
+  color: var(--2);
+}
+.c-3 {
+  color: var(--3);
 }
 
 body {
@@ -30,10 +42,6 @@ a:hover {
   list-style: none;
 }
 
-section {
-  background: red;
-}
-
 /* Flex */
 .flex {
   display: flex;
@@ -52,7 +60,8 @@ section {
   align-items: center;
 }
 
-section, header {
+/* Width */
+.w-full, header, main, footer, section {
   width: 100%;
 }
 
@@ -69,13 +78,13 @@ section, header {
 
 /* Media */
 @media (min-width: 50em) {
-  section, header {
+  section, header, footer {
     width: 49rem;
   }
 }
 
 @media (min-width: 75em) {
-  section, header {
+  section, header, footer {
     width: 74rem;
   }
 }

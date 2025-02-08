@@ -1,10 +1,6 @@
 const express = require('express');
-
 const router = express.Router();
-
 const fetch = require('node-fetch');
-
-const pug = require('pug');
 
 const sFetch = async (url) => {
     const response = await fetch(url);
