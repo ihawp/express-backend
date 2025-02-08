@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --1: #222222;
+  --2: #fff;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem;
+  background: var(--1);
+}
+a, body {
+  color: var(--2);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.list-none {
+  list-style: none;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+/* flex direction */
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+/* gap */
+.gap-half {
+  gap: .5rem;
+}
+
+
+/* padding */
+.p-0 {
+  padding: 0;
+}

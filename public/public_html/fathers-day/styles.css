@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0px;
+
+    background-color: greenyellow;
+}
+
+.icon {
+    font-size: 16vh;
+    transition: all 0.15s ease;
+    margin: 20px;
+}
+    .icon:hover {
+        transform: scale(1.15);
+    }
+.flex {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 80vh;
+    color: rgb(0,0,0, 0.43);
+    font-family: 'League Spartan', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 0vh;
+}
+header i {
+    color: rgb(0,0,0, 0.43);
+}
+header button {
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 6vh;
+    transition: all 0.15s ease;
+}
+header button:hover {
+    transform: scale(1.2);
+}
+#header {
+    transition: all 0.75s ease;
+}
+#header-left {
+    width: 37.5vw;
+    align-items: center;
+    text-align: left;
+    margin: 10px;
+}
+#header-right {
+    width: 37.5vw;
+    align-items: center;
+    text-align: right;
+    margin: 10px;
+}
+#block {
+    width: max-content;
+    height: max-content;
+    flex-direction: column;
+    background-color: transparent;
+    animation: 2s;
+    margin: 30px;
+}
+#block h1 {
+    transition: all 0.5s ease;
+    font-size: 8vh;
+}
+#block button {
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    color: rgb(0,0,0, 0.43);
+}
+.block img {
+    width: 20vw;
+    height: 50vh;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.15s ease;
+}
+    .block img:hover {
+        box-shadow: -9px 9px 1px rgb(0,0,0, 0.43);
+        transform: scale(1.05);
+    }
+#expand-image {
+    width: 80vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px rgb(0,0,0, 0.43) solid;
+}
+    #ei-above {
+        position: absolute;
+        width: 80vw;
+        height: 80vh;
+        align-items: right;
+        justify-content: right;
+        text-align: right;
+    }
+        #ei-above button {
+            margin: 10px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            color: rgb(255, 0, 0);
+            background-color: transparent;
+            border: none;
+        }
+        #ei-above i {
+            font-size: 5vh;
+            padding: 10px 15px;
+            border: 3px red solid;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+#img1 {
+    animation: ltr1000 2s;
+}
+#img2 {
+    animation: ltr2000 2s;
+}
+#img3 {
+    animation: ltr3000 2s;
+}
+/* animations */
+@keyframes ltr3000 {
+    0% {
+        transform: translateX(3500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes ltr2000 {
+    0% {
+        transform: translateX(2500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes ltr1000 {
+    0% {
+        transform: translateX(1500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes ltr-out-3000 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-3000px);
+    }
+}
+@keyframes ltr-out-2000 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2500px);
+    }
+}
+@keyframes ltr-out-1000 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+.reloadicon {
+    color: rgb(0,0,0, 0.43);
+}
+
+
+
+memories-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+b-img-block {
+    margin: 20px;
+    animation: shortright 1.2s;
+}
+    b-img-block img {
+        width: 30vw;
+        height: 60vh;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+b-text-block {
+    margin: 20px;
+    animation: shortleft 1.2s;
+}
+b-text-block h2 {
+    max-width: 40vw;
+    font-size: 8vh
+}
+
+@keyframes shortright {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes shortleft {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes shortRightOut {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}    
+@keyframes shortLeftOut {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+}  
