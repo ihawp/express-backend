@@ -8,7 +8,7 @@ const compression = require('compression');
 const indexRouter = require('./routes/index');
 const blogRouter = require('./routes/blog');
 const bcitRouter = require('./routes/bcit');
-const apiRouter = require('./routes/api-accounts');
+const apiRouter = require('./routes/api');
 const gracieRouter = require('./routes/gracie');
 const fathersDayRouter = require('./routes/fathers-day');
 

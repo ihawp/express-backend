@@ -2,31 +2,26 @@ const express = require('express');
 
 const router = express.Router();
 
-const mysql = require('mysql2');
+const fetch = require('node-fetch');
 
-const dbConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'blog',
-    port: 3306
-};
+const pug = require('pug');
 
-const pool = mysql.createPool(dbConfig);
-
-router.get('/api', (req, res) => {
-    const query = 'SELECT * FROM post ORDER BY timestamp DESC';
-
-    pool.query(query, (error, results) => {
-        if (error) {
-            console.error('Error fetching data:', error);
-            return res.status(500).json({ error: 'Internal Server Error' });
-        }
-        res.json(results);
-    });
-});
 router.get('/', (req, res) => {
     res.render('blog', { title: 'bananaphone blog'});
+});
+
+router.get('/:id', (req, res) => {
+
+    const sFetch = async (url) => {
+        const response = await fetch(url);
+        return await response.json();
+    }
+    sFetch(`http://localhost:3000/api/blog/${req.params.id}`)
+        .then(response => {
+            response = response[0];
+            res.render('blog-post', { id: response.id, title: response.title, content: response.content, timestamp: response.timestamp});
+        });
+
 });
 
 module.exports = router;
