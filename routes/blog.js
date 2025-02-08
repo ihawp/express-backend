@@ -6,19 +6,25 @@ const fetch = require('node-fetch');
 
 const pug = require('pug');
 
+const sFetch = async (url) => {
+    const response = await fetch(url);
+    return await response.json();
+}
+
 router.get('/', (req, res) => {
-    res.render('blog', { title: 'bananaphone blog'});
+    sFetch('http://localhost:3000/api/blog')
+        .then(response => {
+            res.render('blog', { title: 'bananaphone blog', content: response });
+        })
+        .catch(error => console.error(error));
 });
 
 router.get('/:id', (req, res) => {
 
-    const sFetch = async (url) => {
-        const response = await fetch(url);
-        return await response.json();
-    }
     sFetch(`http://localhost:3000/api/blog/${req.params.id}`)
         .then(response => {
             response = response[0];
+            console.log(response.id);
             res.render('blog-post', { id: response.id, title: response.title, content: response.content, timestamp: response.timestamp});
         })
         .catch(error => console.error(error));

@@ -25,20 +25,21 @@ a:hover {
   text-decoration: underline;
 }
 
+/* List Style */
 .list-none {
   list-style: none;
 }
 
-/* flex */
+section {
+  background: red;
+}
+
+/* Flex */
 .flex {
   display: flex;
 }
 
-main {
-  background: red;
-}
-
-/* flex direction */
+/* Flex Direction */
 .flex-row {
   flex-direction: row;
 }
@@ -46,13 +47,35 @@ main {
   flex-direction: column;
 }
 
-/* gap */
+/* Align Items */
+.items-center {
+  align-items: center;
+}
+
+section, header {
+  width: 100%;
+}
+
+/* Gap */
 .gap-half {
   gap: .5rem;
 }
 
 
-/* padding */
+/* Padding */
 .p-0 {
   padding: 0;
+}
+
+/* Media */
+@media (min-width: 50em) {
+  section, header {
+    width: 49rem;
+  }
+}
+
+@media (min-width: 75em) {
+  section, header {
+    width: 74rem;
+  }
 }

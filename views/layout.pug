@@ -9,13 +9,13 @@ html
     link(rel='icon' href='/public_html/public/shooting-star.webp')
   body
     header
-      nav
+      nav(aria-label='Main Site Navigation')
         ul(class='flex gap-half list-none p-0')
           li
             a(href='https://www.ihawp.com'
               title='Warren Chemerika | ihawp.com'
               aria-label='Anchor link to navigate to ihawp.com') Home
-    main
+    main(class='flex flex-col items-center')
       block content
     footer(class='')
       p &copy; ihawp 2025.

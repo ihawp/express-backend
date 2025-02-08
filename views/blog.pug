@@ -1,7 +1,13 @@
 extends layout
 
 block content
-    h1 blog
+    header
+        h1 Blog
+    section
+        h2 Recent Posts
+
+        each item in content
+            p= item.id
 
 
 
