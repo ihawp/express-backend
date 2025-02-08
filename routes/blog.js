@@ -20,8 +20,7 @@ router.get('/:id', (req, res) => {
     sFetch(`http://localhost:3000/api/blog/${req.params.id}`)
         .then(response => {
             response = response[0];
-            console.log(response.id);
-            res.render('blog-post', { id: response.id, title: response.title, content: response.content, timestamp: response.timestamp});
+            res.render('blog-post', { id: response.id, title: response.title, content: JSON.parse(response.content), timestamp: response.timestamp});
         })
         .catch(error => console.error(error));
 

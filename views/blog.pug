@@ -2,10 +2,16 @@ extends layout
 
 block content
     header
+        nav(aria-label='Main Site Navigation')
+            ul(class='flex gap-half list-none p-0')
+                li
+                    a(href='https://www.ihawp.com'
+                        title='Warren Chemerika | ihawp.com'
+                        aria-label='Anchor link to navigate to ihawp.com') Home
         h1 Blog for ihawp.com
     section
         h2 Recent Posts:
         ul
         each item in content
             li
-                a(href=`https://ihawp.com/blog/${item.id}`)= item.title
+                a(href=`http://localhost:3000/blog/${item.id}`)= item.title

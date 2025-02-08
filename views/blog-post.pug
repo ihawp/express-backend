@@ -2,7 +2,12 @@ extends layout
 
 block content
     header
+        nav(aria-label='Main Site Navigation')
+            ul(class='flex gap-half list-none p-0')
+                li
+                    a(href='javascript:history.back()') Go Back
         h1= title
     section
-        p= content
+        each item in content
+            p= item
         p= timestamp
