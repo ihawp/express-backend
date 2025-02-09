@@ -26,12 +26,13 @@ html {
   --3: rgb(22 163 74);
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
+  --6: #eaecd8;
 }
 
 /* semantics */
 body {
   color: var(--2);
-  font-family: sans-serif;
+  font-family: 'Roboto', serif;
   font-size: 1.25rem;
   background: var(--1);
   margin: 1rem;
@@ -140,6 +141,9 @@ li {}
 }
 .c-5 {
   color: var(--5);
+}
+.c-6 {
+  color: var(--6);
 }
 
 /* border color */

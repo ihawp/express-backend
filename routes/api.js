@@ -9,7 +9,7 @@ const pool = mysql.createPool(dbConfig);
 router = express.Router();
 
 router.get('/blog', (req, res) => {
-    const query = 'SELECT * FROM post ORDER BY timestamp DESC';
+    const query = 'SELECT id, title FROM post ORDER BY timestamp DESC';
 
     pool.query(query, (error, results) => {
         if (error) {

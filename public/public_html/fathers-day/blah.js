@@ -36,7 +36,7 @@ function expandImg(image) {
     photoButtonsNotVisible();
     const main = document.getElementById("main");
     main.innerHTML = `
-    <img id="expand-image" src="/fathers-day/img/${image}.jpg">
+    <img id="expand-image" src="/fathers-day/img/${image}.webp">
     <div id="ei-above">
         <button onclick="photos()"><i class="fa-solid fa-x icon"></i></button
     </div>
@@ -72,13 +72,13 @@ function photos() {
     const main = document.getElementById("main");
     main.innerHTML = `
         <div id="block" class="flex block">
-            <img alt='image' onclick="expandImg(${random1})" id="img1" src="/fathers-day/img/output/${random1}.webp"></img>
+            <img alt='image' onclick="expandImg(${random1})" id="img1" src="/fathers-day/img/${random1}.webp"></img>
         </div>
         <div id="block" class="flex block">
-            <img alt='image' onclick="expandImg(${random2})" id="img2" src="/fathers-day/img/output/${random2}.webp"></img>
+            <img alt='image' onclick="expandImg(${random2})" id="img2" src="/fathers-day/img/${random2}.webp"></img>
         </div>
         <div id="block" class="flex block">
-            <img alt='image' onclick="expandImg(${random3})" id="img3" src="/fathers-day/img/output/${random3}.webp"></img>
+            <img alt='image' onclick="expandImg(${random3})" id="img3" src="/fathers-day/img/${random3}.webp"></img>
         </div>
     `;
 }
@@ -134,7 +134,7 @@ function memories() {
         <div id="block" class="flex">
             <memories-container>
                 <b-img-block id="bimgb">
-                    <img src="/fathers-day/img/${dict.img}.jpg"></img>
+                    <img src="/fathers-day/img/${dict.img}.webp"></img>
                 </b-img-block>
                 <b-text-block id="btextb">
                     <h2>${dict.memory}</h2>
