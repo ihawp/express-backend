@@ -4,6 +4,13 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const compression = require('compression');
 const PORT = process.env.port || 4343;
+const cors = require('cors');
+
+const corsOptions = {
+  origin: ['https://ihawp.com', 'https://www.ihawp.com', 'http://localhost:3001', 'http://localhost:3000'],
+  methods: ['GET'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
 
 const indexRouter = require('./routes/index');
 const blogRouter = require('./routes/blog');
@@ -13,6 +20,8 @@ const gracieRouter = require('./routes/gracie');
 const fathersDayRouter = require('./routes/fathers-day');
 
 const app = express();
+
+app.use(cors(corsOptions));
 
 app.use(compression());
 
