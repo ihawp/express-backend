@@ -19,10 +19,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 :root {
   --1: #122;
   --2: #fff;
-  --3: rgb(21 128 61);
+  --3: rgb(22 163 74);
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
 }
@@ -57,6 +58,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--3);
 }
 h1 { margin: 0; }
 h2 {}
@@ -74,7 +76,9 @@ a, button {
   text-decoration: none;
   transition: ease 0.1s;
 }
-
+a {
+  color: var(--2);
+}
 a:visited,
 a:hover,
 a.active,
@@ -737,6 +741,15 @@ textarea {
 }
 
 /* font size */
+.font-size-half {
+  font-size: .5rem;
+}
+.font-size-1 {
+  font-size: 1rem;
+}
+.font-size-2 {
+  font-size: 2rem;
+}
 .font-size-xx-large {
   font-size: xx-large;
 }
