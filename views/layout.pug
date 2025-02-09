@@ -10,5 +10,13 @@ html
   body(class='flex flex-col items-center')
     main(class='flex flex-col items-center')
       block content
-    footer(class='')
+    footer(class='flex flex-row items-center justify-between h-3')
       p &copy; ihawp 2025.
+      nav(aria-label='Footer Navigation')
+        ul(class='flex flex-row gap-half')
+          li
+            a(href='') Home
+          li
+            a(href='') LinkedIn
+          li
+            a(href='') Github

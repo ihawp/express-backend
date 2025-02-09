@@ -72,13 +72,13 @@ function photos() {
     const main = document.getElementById("main");
     main.innerHTML = `
         <div id="block" class="flex block">
-            <img onclick="expandImg(${random1})" id="img1" src="/fathers-day/img/${random1}.jpg"></img>
+            <img alt='image' onclick="expandImg(${random1})" id="img1" src="/fathers-day/img/output/${random1}.webp"></img>
         </div>
         <div id="block" class="flex block">
-            <img onclick="expandImg(${random2})" id="img2" src="/fathers-day/img/${random2}.jpg"></img>
+            <img alt='image' onclick="expandImg(${random2})" id="img2" src="/fathers-day/img/output/${random2}.webp"></img>
         </div>
         <div id="block" class="flex block">
-            <img onclick="expandImg(${random3})" id="img3" src="/fathers-day/img/${random3}.jpg"></img>
+            <img alt='image' onclick="expandImg(${random3})" id="img3" src="/fathers-day/img/output/${random3}.webp"></img>
         </div>
     `;
 }

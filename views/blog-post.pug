@@ -1,13 +1,19 @@
 extends layout
 
 block content
-    header
+    header(class='mb-2')
         nav(aria-label='Main Site Navigation')
             ul(class='flex gap-half list-none p-0')
                 li
-                    a(href='javascript:history.back()') Go Back
-        h1= title
+                    a(href='javascript:history.back()' class='c-4') Go Back
+    header(class='mb-1 bg-5 p-1 br-8')
+        h1= postTitle
+        div(class='flex')
+            p= timestamp + ' | ' + author
+        div(class='flex justify-between')
+            a(href=`${github}`) Github
+            a(href=`${url}`) URL
     section
-        each item in content
-            p= item
-        p= timestamp
+        div
+            each item in content
+                p= item

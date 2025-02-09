@@ -4,10 +4,7 @@ const path = require('path');
 
 
 router.get('/', (req, res) => {
-  res.render(
-      'bcit',
-  { title: 'BCIT Front End Web Developer Certificate | Warren Chemerika' }
-  );
+  res.render('bcit',{ title: 'BCIT Front End Web Developer Certificate' });
 });
 
 router.use(express.static(path.join(__dirname, '../public/public_html/bcit')));
