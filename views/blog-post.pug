@@ -12,7 +12,7 @@ block content
             div
                 -
                     let l = new Date(timestamp)
-                p= `${author} | ${l.getDay()} / ${l.getMonth() + 1} / ${l.getFullYear()}`
+                p= `${author} | ${l.getDate()} / ${l.getMonth() + 1} / ${l.getFullYear()}`
             div
                 a(href=`${github}` class='mr-half c-4') Github
                 a(href=`${url}` class='c-4') URL
