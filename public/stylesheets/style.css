@@ -737,7 +737,7 @@ li {}
 }
 
 /* text decoration */
-.text-dec-none, #button-exit-mobile-nav:hover {
+.text-dec-none {
   text-decoration: none;
 }
 .text-dec-underline {
@@ -786,7 +786,7 @@ textarea {
 }
 
 /* display */
-.display, .display-sm, .display-md, .display-lg, #mobile-nav {
+.display, .display-sm, .display-md, .display-lg {
   display: none;
 }
 
@@ -795,7 +795,12 @@ textarea {
   object-position: bottom;
 }
 
+
 @media (min-width: 40em) {
+  #mobile-nav {
+    height: max-content;
+    overflow: unset;
+  }
   /* flex direction images */
   .flex-row-sm {
     flex-direction: column;
