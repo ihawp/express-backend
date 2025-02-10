@@ -2,15 +2,28 @@ const express = require('express');
 const path = require("path");
 const router = express.Router();
 
-router.use(express.static(path.join(__dirname, '../public/public_html/public')));
+const nFetch = require('../middleware/nFetch');
 
+
+/*
+router.use(express.static(path.join(__dirname, '../public/public_html/public')));
 router.get(['/', '/roadmap', '/privacy'], function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public/public_html/public', 'index.html'));
 });
+*/
 
-router.get('/robots.txt', function (req, res) {
-  res.type('text/plain');
-  res.send("User-agent: *\nDisallow: /fathers-day\nDisallow: /gracie\nAllow: /public/index.html");
+router.get('/', (req, res) => {
+  nFetch('https://www.ihawp.com/api/projects')
+      .then(response => {
+        res.render('index', { title: 'Home | ihawp.com', content: response });
+      })
+      .catch(error => console.error(error));
+});
+
+
+
+router.get('/privacy', (req, res) => {
+  res.render('privacy', { content: 'wow' });
 });
 
 module.exports = router;
