@@ -14,11 +14,18 @@ block content
     section(class='flex flex-col gap-1')
         h2 Recent Work
         each item in content
-            div(class='bg-6 p-1 br-8 pointer' id=`project-${item.id}`)
-                h3= item.title
-                div(class='display transition-025s')
-                    each wow in JSON.parse(item.description)
-                        p= wow
+            div(class='bg-6 p-1 br-8 pointer flex flex-wrap justify-between items-center' id=`project-${item.id}`)
+                div
+                    h3= item.title
+                div
+                    ul(class='flex gap-1')
+                        li
+                            a(href=`${item.url}` class='hover-underline') URL
+                        li
+                            a(href=`${item.github}`) Github
+                div(class='display pb-1')
+                    each text in JSON.parse(item.description)
+                        p(class='mt-1')= text
     script(src='javascripts/pug-projects.js')
 
     section
