@@ -1,17 +1,25 @@
 extends layout
 
 block content
-    h2 wow this is the index
-    p need to get the content from projects
+    header(class='flex flex-wrap justify-center align-center')
+        div(class='flex-grow-1')
+            h1 Warren Chemerika
+            h2 Web Developer
+            p Specializing in JavaScript related projects
+        div(class='flex-grow-1')
+            h1 Warren Chemerika
+            h2 Web Developer
+            p Specializing in JavaScript related projects
 
-    header
-        h1 Warren Chemerika
-        h2 Web Developer
-        p Specializing in JavaScript related projects
-
-
-    section
+    section(class='flex flex-col gap-1')
         h2 Recent Work
+        each item in content
+            div(class='bg-6 p-1 br-8 pointer' id=`project-${item.id}`)
+                h3= item.title
+                div(class='display transition-025s')
+                    each wow in JSON.parse(item.description)
+                        p= wow
+    script(src='javascripts/pug-projects.js')
 
     section
         h2 Where did I study?

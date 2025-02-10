@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -28,7 +29,7 @@ html {
 /* semantics */
 body {
   color: var(--2);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   margin: 1rem;
   background: linear-gradient(205deg, #222, #111);
   background-size: 1000% 1000%;
@@ -55,11 +56,16 @@ nav {}
 main {}
 section {}
 footer {}
-button, summary {
+button, summary, a, .pointer {
   cursor: pointer;
 }
 details {
   border-top: 1px solid var(--5);
+}
+
+/* transition */
+.transition-025s {
+  transition: 0.25s ease;
 }
 
 /* headings */
@@ -85,7 +91,6 @@ a, button {
 }
 a {
   color: var(--2);
-  cursor: pointer;
 }
 a:visited,
 a:hover,
