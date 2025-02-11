@@ -1,11 +1,11 @@
 extends layout
 
 block content
-    header(class='flex flex-col items-center text-center')
-        img(src='/images/w.webp' class='rounded' width='250' height='250')
-        h1 Warren Chemerika
-        h2(class='bg-6') Web Developer
-        p Specializing in JavaScript related projects
+    header(class='flex flex-col items-center text-center mx-3')
+        img(src='/images/w.webp' class='rounded mb-1 hero-image-hover' width='250' height='250')
+        h1(class='font-size-4 mb-half') Warren Chemerika
+        h2(class='bg-6 p-half br-4 font-size-2') Web Developer @ Servoweb
+        p(class='max-w-400') Certified by Saskatchewan Polytechnic
 
     section(class='flex flex-col gap-1')
         h2 Recent Work
@@ -16,9 +16,9 @@ block content
                 div
                     ul(class='flex gap-1 flex-grow-1')
                         li
-                            a(href=`${item.url}` class='hover-underline rounded bg-6') URL
+                            a(href=`${item.url}` class='hover-underline rounded bg-6')
                         li
-                            a(href=`${item.github}` class='hover-underline rounded bg-6') Github
+                            a(href=`${item.github}` class='hover-underline rounded bg-6')
                 div(class='display pb-1')
                     each text in JSON.parse(item.description)
                         p(class=`mt-1`)= text

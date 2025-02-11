@@ -2,11 +2,15 @@ extends layout
 
 block content
     header(class='flex flex-col gap-1 mt-1')
-        h1(class='mb-half ml-half')= postTitle
-        div(class='flex flex-row items-center b-only-top-bottom-1 bs-solid bc-5 py-half justify-between mb-1 font-weight-700')
+        nav(aria-label='Back to Blog Homepage' class='mb-1')
+            ul(class='flex gap-half list-none p-0')
+                li
+                    a(href='/blog' class='c-4 hover-underline p-half') Back To Blog Home
+        h1(class='ml-half mb-1')= postTitle
+        div(class='flex flex-row items-center b-only-top-bottom-1 bs-solid bc-5 py-half justify-between font-weight-700')
             -
                 let l = new Date(timestamp)
-            p(class='c-4')= `${author} | ${l.getDate()} / ${l.getMonth() + 1} / ${l.getFullYear()}`
+            p(class='c-4')= `${l.getDate()}/${l.getMonth() + 1}/${l.getFullYear()}`
             div
 
                 a(href=`${github}` class='mr-1 c-4 hover-underline') Github
@@ -15,8 +19,8 @@ block content
         div(class='marked flex flex-col')
             each item in content
                 | !{item}
-    section(class='mt-2 mb-1')
-        nav(class='flex justify-center')
+    section(class='mt-3')
+        nav(class='flex justify-center' aria-label='Back to Blog Homepage')
             ul(class='flex gap-half list-none p-0')
                 li
                     a(href='/blog' class='c-4 hover-underline bs-solid bc-4 p-half bw-1 br-4') Back To Blog Home

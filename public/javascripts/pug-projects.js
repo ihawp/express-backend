@@ -1,24 +1,19 @@
 const l = document.querySelectorAll('div[id^="project-"]');
-let open;
+l[0].lastElementChild.classList.remove('display');
+let open = l[0];
 
 
+l.forEach((item) => item.addEventListener('click', () => {
+    item.scrollIntoView({ block: "center", behavior: "smooth" });
 
-l.forEach((item) =>
-    item.addEventListener('click', () => {
-        item.scrollIntoView({ block: "center", behavior: "smooth" });
+    console.log(item);
 
-        if (item === open) {
-            return;
-        }
+    if (item === open) return;
 
-        if (item.classList.contains('display')) {
-            item.lastElementChild.classList.remove('display');
-        }
-        if (open !== undefined ) open.lastElementChild.classList.add('display');
-        console.log(open, item);
+    if (item.lastElementChild.classList.contains('display')) {
+        item.lastElementChild.classList.remove('display');
+    }
+    open.lastElementChild.classList.add('display');
+    open = item;
 
-        open = item;
-        console.log(open, item);
-
-    })
-);
+}));
