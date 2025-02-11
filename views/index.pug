@@ -25,7 +25,10 @@ block content
                             a(href=`${item.github}`) Github
                 div(class='display pb-1')
                     each text in JSON.parse(item.description)
-                        p(class='mt-1')= text
+                        p(class=`mt-1`)= text
+                    div
+                        each logo in JSON.parse(item.languages)
+                            img(src=`${logo}`)
     script(src='javascripts/pug-projects.js')
 
     section

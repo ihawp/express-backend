@@ -1,15 +1,17 @@
 const l = document.querySelectorAll('div[id^="project-"]');
-let open = l[l.length - 1];
+let open;
 
 
 
-l.forEach((item, key) => {
-    item.addEventListener('click', () => {
-        item.scrollIntoView({ block: "center", behavior: "auto" });
-        if (open !== item) {
+l.forEach((item) =>
+    item.addEventListener('click', (event) => {
+
+        item.scrollIntoView({ block: "nearest", behavior: "auto" });
+
+        if (open !== item)
             item.lastElementChild.classList.remove('display');
-            open.lastElementChild.classList.add('display');
-        }
+            if (open !== undefined ) open.lastElementChild.classList.add('display');
+
         open = item;
-    });
-});
+    })
+);
