@@ -15,7 +15,7 @@ router.get(['/', '/roadmap', '/privacy'], function(req, res, next) {
 router.get('/', (req, res) => {
   nFetch('https://www.ihawp.com/api/projects')
       .then(response => {
-          res.render('index', { title: 'Home | ihawp.com', content: response });
+          res.render('index', { title: 'Warren Chemerika | ihawp.com', content: response });
       })
       .catch(error => console.error(error));
 });

@@ -24,7 +24,7 @@ html {
   --3: rgb(22 163 74);
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
-  --6: #eaecd8;
+  --6: rgb(55, 55, 55,1);
 }
 
 /* semantics */
@@ -72,11 +72,10 @@ details {
 /* headings */
 h1 {
   color: var(--3);
-  line-height: 5rem;
 }
-h2 { line-height: 4rem; }
-h3 { line-height: 3rem; }
-h4 { line-height: 2rem; }
+h2 { }
+h3 { }
+h4 { }
 h5 {}
 h6 {}
 
@@ -133,7 +132,7 @@ li {}
   background: var(--5);
 }
 .bg-6 {
-  background: var(--5);
+  background: var(--6);
 }
 .bg-none {
   background: none;
@@ -260,13 +259,6 @@ li {}
 }
 
 /* text */
-/* text-smart-sm is images class
-   at small breakpoint (550px) it
-   is changed to text-align end
-   a bit custom, but could be extended
-   in a larger code base, and perhaps down
-   the line I will have to extend it.
-*/
 .text-start, .text-start-sm  {
   text-align: start;
 }
@@ -275,6 +267,11 @@ li {}
 }
 .text-end {
   text-align: end;
+}
+
+/* align self */
+.align-self-end {
+  justify-self: end;
 }
 
 /* flex */
@@ -802,6 +799,12 @@ textarea {
 .font-size-2 {
   font-size: 2rem;
 }
+.font-size-2-5 {
+   font-size: 2.5rem;
+}
+.font-size-3 {
+  font-size: 3rem;
+}
 .font-size-xx-large {
   font-size: xx-large;
 }
@@ -826,23 +829,44 @@ textarea {
   object-position: bottom;
 }
 
+/* transform: rotate */
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+
 /* div.marked */
-div.marked ol, div.marked ul { padding-left: 1.25rem; line-height: 2rem }
+div.marked {
+  padding: .5rem;
+}
+div.marked ol, div.marked ul { padding-left: 1.25rem; line-height: 2rem; }
 div.marked h2 {
   border-bottom: 1px solid var(--5);
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+div.marked h2, div.marked h3, div.marked h4 {
   margin-bottom: .5rem;
 }
-div.marked h3 {
-
+div.marked h3, div.marked h4 {
+  margin-top: 1rem;
 }
 div.marked p {
 
 }
 
+/* mobile nav */
+#mobile-nav {
+  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
 @media (min-width: 40em) {
   #mobile-nav {
+    font-size: inherit;
     height: max-content;
     overflow: unset;
+    padding: unset;
   }
   /* flex direction images */
   .flex-row-sm {

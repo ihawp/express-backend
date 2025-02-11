@@ -1,24 +1,24 @@
 extends layout
 
 block content
-    header(class='flex flex-wrap justify-center align-center')
-        div(class='flex-grow-1')
-            h1 Warren Chemerika
-            h2 Web Developer
-            p Specializing in JavaScript related projects
+    header(class='flex flex-col items-center text-center')
+        img(src='/images/w.webp' class='rounded' width='250' height='250')
+        h1 Warren Chemerika
+        h2(class='bg-6') Web Developer
+        p Specializing in JavaScript related projects
 
     section(class='flex flex-col gap-1')
         h2 Recent Work
         each item in content
-            div(class='bg-6 p-1 br-4 pointer flex flex-wrap justify-between items-center' id=`project-${item.id}`)
+            div(class='bg-5 p-1 br-4 pointer flex flex-wrap justify-between items-center' id=`project-${item.id}`)
                 div
-                    h3= item.title
+                    h3(class='mr-1')= item.title
                 div
-                    ul(class='flex gap-1')
+                    ul(class='flex gap-1 flex-grow-1')
                         li
-                            a(href=`${item.url}` class='hover-underline') URL
+                            a(href=`${item.url}` class='hover-underline rounded bg-6') URL
                         li
-                            a(href=`${item.github}`) Github
+                            a(href=`${item.github}` class='hover-underline rounded bg-6') Github
                 div(class='display pb-1')
                     each text in JSON.parse(item.description)
                         p(class=`mt-1`)= text

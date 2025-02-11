@@ -5,13 +5,20 @@ let open;
 
 l.forEach((item) =>
     item.addEventListener('click', () => {
+        item.scrollIntoView({ block: "center", behavior: "smooth" });
 
-        item.scrollIntoView({ block: "nearest", behavior: "auto" });
+        if (item === open) {
+            return;
+        }
 
-        if (open !== item)
+        if (item.classList.contains('display')) {
             item.lastElementChild.classList.remove('display');
-            if (open !== undefined ) open.lastElementChild.classList.add('display');
+        }
+        if (open !== undefined ) open.lastElementChild.classList.add('display');
+        console.log(open, item);
 
         open = item;
+        console.log(open, item);
+
     })
 );

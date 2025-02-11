@@ -1,8 +1,8 @@
 extends layout
 
 block content
-    header(class='flex flex-col gap-1 mt-2')
-        h1= postTitle
+    header(class='flex flex-col gap-1 mt-1')
+        h1(class='mb-half ml-half')= postTitle
         div(class='flex flex-row items-center b-only-top-bottom-1 bs-solid bc-5 py-half justify-between mb-1 font-weight-700')
             -
                 let l = new Date(timestamp)
@@ -12,7 +12,7 @@ block content
                 a(href=`${github}` class='mr-1 c-4 hover-underline') Github
                 a(href=`${url}` class='c-4 hover-underline') Link
     section
-        div(class='flex flex-col c-6 marked')
+        div(class='marked flex flex-col')
             each item in content
                 | !{item}
     section(class='mt-2 mb-1')
