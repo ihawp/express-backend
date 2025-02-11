@@ -3,13 +3,14 @@ extends layout
 block content
     header(class='flex flex-col gap-1 mt-2')
         h1= postTitle
-        div(class='flex flex-row items-center b-only-top-bottom-1 bs-solid bc-5 py-half justify-between mb-1')
+        div(class='flex flex-row items-center b-only-top-bottom-1 bs-solid bc-5 py-half justify-between mb-1 font-weight-700')
             -
                 let l = new Date(timestamp)
             p(class='c-4')= `${author} | ${l.getDate()} / ${l.getMonth() + 1} / ${l.getFullYear()}`
             div
+
                 a(href=`${github}` class='mr-1 c-4 hover-underline') Github
-                a(href=`${url}` class='c-4 hover-underline') URL
+                a(href=`${url}` class='c-4 hover-underline') Link
     section
         div(class='flex flex-col c-6 marked')
             each item in content
@@ -18,4 +19,4 @@ block content
         nav(class='flex justify-center')
             ul(class='flex gap-half list-none p-0')
                 li
-                    a(href='/blog' class='c-4 hover-underline bs-solid bc-4 p-half bw-1 br-8') Back To Blog Home
+                    a(href='/blog' class='c-4 hover-underline bs-solid bc-4 p-half bw-1 br-4') Back To Blog Home

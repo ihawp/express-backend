@@ -6,15 +6,11 @@ block content
             h1 Warren Chemerika
             h2 Web Developer
             p Specializing in JavaScript related projects
-        div(class='flex-grow-1')
-            h1 Warren Chemerika
-            h2 Web Developer
-            p Specializing in JavaScript related projects
 
     section(class='flex flex-col gap-1')
         h2 Recent Work
         each item in content
-            div(class='bg-6 p-1 br-8 pointer flex flex-wrap justify-between items-center' id=`project-${item.id}`)
+            div(class='bg-6 p-1 br-4 pointer flex flex-wrap justify-between items-center' id=`project-${item.id}`)
                 div
                     h3= item.title
                 div
