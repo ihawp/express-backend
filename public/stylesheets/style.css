@@ -73,7 +73,6 @@ details {
 h1 {
   color: var(--3);
   line-height: 5rem;
-  margin: 0;
 }
 h2 {  line-height: 4rem;}
 h3 { line-height: 3rem; }

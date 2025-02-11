@@ -4,7 +4,7 @@ let open;
 
 
 l.forEach((item) =>
-    item.addEventListener('click', (event) => {
+    item.addEventListener('click', () => {
 
         item.scrollIntoView({ block: "nearest", behavior: "auto" });
 
