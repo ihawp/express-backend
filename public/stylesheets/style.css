@@ -30,7 +30,7 @@ html {
 /* semantics */
 body {
   color: var(--2);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin: 1rem;
   background: linear-gradient(205deg, #222, #111);
   background-size: 1000% 1000%;
@@ -177,6 +177,7 @@ li {}
   border-color: var(--5);
 }
 
+/* max width */
 .max-w-400 {
   max-width: 400px;
 }
@@ -219,6 +220,14 @@ li {}
   border-left-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
+}
+
+/* border only top/bottom */
+.b-only-top-bottom-1 {
+  border-top-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
 }
 
 /* border only bottom */
@@ -367,7 +376,7 @@ li {}
 }
 
 /* list style */
-.disc {
+.disc, div.marked ul {
   list-style: disc;
 }
 
@@ -565,7 +574,7 @@ li {}
 }
 
 /* m x */
-.mx-half {
+.mx-half, p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -696,7 +705,7 @@ li {}
   margin-right: 5rem;
 }
 
-/* width % */
+/* width */
 .w-auto {
   width: auto;
 }
@@ -715,13 +724,11 @@ li {}
 .w-3 {
   width: 18.75rem;
 }
-
-/* min width */
-.min-width-150 {
-  min-width: 150px;
+.w-min-content {
+  width: min-content;
 }
-.min-width-150:last-of-type {
-  flex-grow: 1;
+.w-max-content {
+  width: max-content;
 }
 
 /* height */
@@ -790,6 +797,9 @@ textarea {
 .font-size-1 {
   font-size: 1rem;
 }
+.font-size-1-5 {
+  font-size: 1.5rem;
+}
 .font-size-2 {
   font-size: 2rem;
 }
@@ -816,6 +826,9 @@ textarea {
 .object-bottom {
   object-position: bottom;
 }
+
+
+div.marked ol, div.marked ul { padding-left: 1.25rem;}
 
 
 @media (min-width: 40em) {
