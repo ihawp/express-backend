@@ -39,7 +39,6 @@ router.get('/', (req, res) => {
         .catch(error => console.error(error));
 });
 
-
 router.get('/privacy', (req, res) => {
     res.render('privacy', {content: 'wow'});
 });
