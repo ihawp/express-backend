@@ -2,4 +2,4 @@
 
 ## TODO:
 + Need to add link to react in db/server
-+ style bcit/blog pages better
++ style bcit/blog/privacy pages better
