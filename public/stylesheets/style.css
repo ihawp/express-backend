@@ -21,10 +21,10 @@ html {
 :root {
   --1: #122;
   --2: #fff;
-  --3: rgb(22 163 74);
+  --3: rgb(22, 163, 74);
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
-  --6: rgb(55, 55, 55,1);
+  --6: rgb(153, 153, 153, 0.1);
 }
 
 /* semantics */
@@ -425,6 +425,16 @@ li {}
   min-height: 18.75rem;
 }
 
+/* opacity */
+.opacity-10 {
+  opacity: .1;
+}
+
+/* min width */
+.min-w-1-25 {
+  min-width: 1.25rem;
+}
+
 /* object fit */
 .object-cover {
   object-fit: cover;
@@ -458,6 +468,9 @@ li {}
 /* padding */
 .p-quarter {
   padding: 0.25rem;
+}
+.p-third {
+  padding: 0.33rem;
 }
 .p-half {
   padding: 0.5rem;
@@ -902,11 +915,6 @@ textarea {
 /* object position */
 .object-bottom {
   object-position: bottom;
-}
-
-/* transform: rotate */
-.rotate-90 {
-  transform: rotate(90deg);
 }
 
 .transition-all {
