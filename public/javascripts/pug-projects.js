@@ -5,9 +5,6 @@ let open = l[0];
 
 l.forEach((item) => item.addEventListener('click', (event) => {
 
-    console.log({l});
-
-
     /*
 
         Update h2 to be green when open.

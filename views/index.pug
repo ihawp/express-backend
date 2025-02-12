@@ -5,7 +5,7 @@ block content
         img(src='/images/w.webp' alt='Warren Chemerika outside wearing sunglasses.'
             class='rounded mb-1 hero-image-hover transition-all' width='225' height='225')
         h1(class='mb-half c-2 title') Warren Chemerika
-        h2(class='bg-5 px-half py-1 br-4 font-weight-600 subtitle mb-half') Web Developer @ Servoweb
+        h2(class='bg-5 px-half py-1 br-4 font-weight-600 subtitle mb-1') Web Developer @ Servoweb
         a(class='max-w-400 hover-underline flex items-center paratitle' href='media/Front-EndWebDevCertificateWarrenChemerika.pdf')
             svg(
                 class="min-w-1-25 mr-half"
@@ -37,8 +37,12 @@ block content
                             width="20"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns="http://www.w3.org/2000/svg"
+                            fill="var(--3)"
+                            stroke="var(--3)"
                         )
                             image(
+                                fill="var(--3)"
+                                stroke="var(--3)"
                                 height="20"
                                 width="20"
                                 y="0"
@@ -56,8 +60,8 @@ block content
                             if (item.url !== '')
                                 li
                                     a(href=`${item.url}` class='bg-5 bg-h-6 p-half rounded flex items-center justify-center')
-                                        svg(aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 25 25")
-                                            path(stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961")
+                                        svg(aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 23 23")
+                                            path(stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961")
                 div(class='display mt-1')
                     each text in item.description
                         p(class=`mt-1`)= text
@@ -66,21 +70,43 @@ block content
                             -
                             svg(xmlns="http://www.w3.org/2000/svg" fill="var(--6)" width="55" height="55" viewBox="0 0 800 600")
                                 path(d=logo)
-    section.mb-2
+    section.mb-1
         h2.text-center.mb-1.bg-5.px-half.br-4 Certifications
         div.flex.flex-wrap.gap-1
             div.flex.flex-row.flex-grow-1.bw-1.bs-solid.bc-5.p-1.gap-1.br-4
-                img(src='images/bcit.jpg' alt='' width="100" height="100").br-4
+                img(src='images/bcit.jpg' alt='' width="75" height="75").br-4
                 div(class='flex flex-col')
-                    h3 British Columbia Institute of Technology
-                    h4.font-weight-600 Front-End Web Developer Certificate
-                    p January 2025 - July 2025
+                    h3.font-weight-700 British Columbia Institute of Technology
+                    h4.font-weight-400 Front-End Web Developer Certificate
+                    p.font-size-1.mb-1 January 2025 - July 2025
+                    ul.flex.flex-wrap.gap-half
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter HTML5
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter CSS3
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Sass
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter JavaScript
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Adobe Photoshop
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Adobe Illustrator
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Adobe XD
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Figma
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Git
             div.flex.flex-row.flex-grow-1.bw-1.bs-solid.bc-5.p-1.gap-1.br-4
-                img(src='images/saskpolytech.jpg' alt='' width="100" height="100").br-4
+                img(src='images/saskpolytech.jpg' alt='' width="75" height="75").br-4
                 div(class='flex flex-col')
-                    h3 Saskatchewan Polytechnic
-                    h4 Applied Certificate of Front-End Web Development
-                    p September 2023 - April 2024
-
+                    h3.font-weight-700 Saskatchewan Polytechnic
+                    h4.font-weight-400 Applied Certificate of Front-End Web Development
+                    p.font-size-1.mb-1 September 2023 - April 2024
+                    ul.flex.flex-wrap.gap-half
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter HTML5
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter CSS3
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Bootstrap
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter JavaScript
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter p5.js
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter React
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter WordPress
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter PHP
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter GIMP
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Adobe XD
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Adobe Illustrator
+                        li.bw-1.bs-solid.bc-5.font-size-0-9.br-4.p-quarter Figma
     <!-- scripts -->
     script(src='javascripts/pug-projects.js')

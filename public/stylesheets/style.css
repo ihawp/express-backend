@@ -24,6 +24,7 @@ html {
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
   --6: rgb(255, 255, 255, 0.3);
+  --7: linear-gradient(205deg, #222, #111);
 }
 
 /* semantics */
@@ -31,7 +32,7 @@ body {
   color: var(--2);
   font-size: 1.125rem;
   margin: 1rem;
-  background: linear-gradient(205deg, #222, #111);
+  background: var(--7);
   background-size: 1000% 1000%;
   animation: gradientAnimation 100s ease infinite;
 }
@@ -878,6 +879,9 @@ textarea {
 .font-size-half {
   font-size: .5rem;
 }
+.font-size-0-9 {
+  font-size: .9rem;
+}
 .font-size-1 {
   font-size: 1rem;
 }
@@ -973,7 +977,41 @@ div.marked p {
 /* mobile nav */
 #mobile-nav {
   padding: 1rem 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* from normalize-fwd */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #26374a;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
 }
 
 @media (min-width: 40em) {
