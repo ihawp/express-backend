@@ -5,9 +5,16 @@ let open = l[0];
 
 l.forEach((item) => item.addEventListener('click', (event) => {
 
-    console.log({event});
+    console.log({l});
 
 
+    /*
+
+        Update h2 to be green when open.
+
+     */
+    updateToGreen(item);
+    updateToGreen(open);
 
 
     /*
@@ -64,6 +71,14 @@ const updateSVG = (item, svg) => {
     item.href.baseVal = svg;
 }
 
+const updateToGreen = (item) => {
+    let focus = item.firstChild.firstChild.firstChild.nextSibling;
+    if (focus.classList.contains('c-3')) {
+        return focus.classList.remove('c-3');
+    }
+    focus.classList.add('c-3');
+}
+
 /*
 
     Initialize first project (open and make minus svg)
@@ -72,3 +87,4 @@ const updateSVG = (item, svg) => {
 
 l[0].lastElementChild.classList.remove('display');
 updateSVG(l[0].firstElementChild.firstElementChild.firstElementChild.firstElementChild, minusSvg);
+updateToGreen(l[0]);

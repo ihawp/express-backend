@@ -24,7 +24,7 @@ html {
   --3: rgb(22, 163, 74);
   --4: rgb(99, 99, 99, 1);
   --5: rgb(38,38,38,1);
-  --6: rgb(153, 153, 153, 0.1);
+  --6: rgb(255, 255, 255, 0.3);
 }
 
 /* semantics */
@@ -72,6 +72,9 @@ button, summary, a, .pointer {
 }
 .subtitle {
   font-size: 1.25rem;
+}
+.paratitle {
+  font-size: 1rem;
 }
 h1 {
   color: var(--3);
@@ -897,6 +900,19 @@ textarea {
 }
 
 /* webkit scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--6) var(--1);
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: var(--1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: var(--6);
+}
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -922,6 +938,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
 }
+
 
 /* div.marked */
 div.marked {
