@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition: 0.25s ease;
 }
 * {
   margin: 0;
@@ -198,6 +197,9 @@ li {}
 .bc-5 {
   border-color: var(--5);
 }
+.bc-6 {
+  border-color: var(--5);
+}
 
 .hero-image-hover:hover {
   background: var(--3);
@@ -253,6 +255,14 @@ li {}
   border-left-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
+}
+
+/* border only bottom */
+.b-only-bottom-1 {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
 }
 
 /* border only top/bottom */

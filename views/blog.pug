@@ -1,11 +1,11 @@
 extends layout
 
 block content
-    header
-        h1 Blog for ihawp.com
-    section(class='flex flex-col gap-2 bg-5 p-1 br-4')
-        h2 Recent Posts:
-        ul(class='flex flex-col gap-1')
+    header(class='text-center')
+        h1(class='bg-5 br-4 px-1 mb-1') Blog
+    section(class='flex flex-col gap-1')
+        h2(class='b-only-bottom-1 bc-5 bs-solid pb-1 mb-1 mt-2') Recent Posts:
+        ul(class='flex flex-wrap gap-1')
             each item in content
                 li
-                    a(class='c-6' href=`/blog/${item.id}`)= item.title
+                    a(class='bw-1 bc-6 bs-solid br-4' href=`/blog/${item.id}`)= item.title
