@@ -3,7 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const compression = require('compression');
-const PORT = process.env.port || 4345;
+const PORT = process.env.port || 4344;
 const cors = require('cors');
 
 const corsOptions = {

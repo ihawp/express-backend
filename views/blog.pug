@@ -5,7 +5,7 @@ block content
         h1(class='bg-5 br-4 px-1 mb-1') Blog
     section(class='flex flex-col gap-1')
         h2(class='b-only-bottom-1 bc-5 bs-solid pb-1 mb-1 mt-2') Recent Posts:
-        ul(class='flex flex-wrap gap-1')
+        ul(class='flex flex-col gap-1 disc pl-1')
             each item in content
                 li
-                    a(class='bw-1 bc-6 bs-solid br-4' href=`/blog/${item.id}`)= item.title
+                    a(href=`/blog/${item.id}`)= item.title
