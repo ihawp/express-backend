@@ -1,35 +1,38 @@
 doctype html
-html
+html(lang='en')
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(name='author' content='Warren Chemerika | ihawp.com')
     meta(name='description' content='Warren Chemerika | ihawp.com')
     link(rel='icon' href='/public_html/public/shooting-star.webp')
   body(class='flex flex-col items-center')
-    header(class='flex flex-row bg-6 p-1 br-8 justify-between')
-      nav(class='')
-        ul
+    a(class='screen-reader-text' href='#content') Skip To Content
+    header(class='flex bg-5 px-1 py-half br-4 justify-between mb-1')
+      nav(aria-label='Main Navigation' class='ml-1 flex-grow-1')
+        ul(class='none')
           li
-            a(class='' title='' aria-label='') shooting star
-      nav(aria-label='Main Navigation')
-        ul(class='flex flex-row gap-2')
+            button(id='open-mobile-nav' class='font-weight-700 bg-none c-2 font-size-2-5 b-none') &#9776;
+        ul(class='flex flex-col-sm gap-2 display-sm justify-between' id='mobile-nav')
           li
-            a(class='' title='Warren Chemerika | LinkedIn' aria-label='Link to Warren Chemerikas Linkedin Profile') LinkedIn
+            ul(class='flex flex-col-sm gap-2')
+              li
+                a(class='font-weight-700' href='/' title='' aria-label='') Home
+              li
+                a(class='font-weight-700' href='/blog' title='' aria-label='') Blog
+              li
+                a(class='font-weight-700' href='https://www.linkedin.com/in/warren-chemerika-628b15275' title='Warren Chemerika on LinkedIn' aria-label='Link to Warren Chemerikas Linkedin Profile') LinkedIn
+              li
+                a(class='font-weight-700' href='https://www.github.com/ihawp' title='ihawp on GitHub' aria-label='Link to my Github account, my username is ihawp') GitHub
           li
-            a(class='' title='' aria-label='') LinkedIn
-          li
-            a(class='' title='' aria-label='') Contact Me Now
-    main(class='flex flex-col items-center')
+            a(class='bg-3 px-half py-1 br-4 font-weight-600' href='mailto:ihawp@ihawp.com' title='Send me an email (ihawp@ihawp.com)' aria-label='Send me an email now by pressing this button') Contact Me Now
+    main(class='flex flex-col items-center' id="content")
       block content
-    footer(class='flex flex-row items-center justify-between px-1')
-      p(class='c-4') &copy; ihawp 2025.
+    footer(class='flex flex-wrap items-center justify-between gap-1 mt-1')
+      p(class='c-4') &copy; ihawp.com 2025
       nav(aria-label='Footer Navigation')
         ul(class='flex flex-row gap-half')
           li
-            a(href='https://www.ihawp.com' class='c-4') Home
-          li
-            a(href='https://www.linkedin.com/in/warren-chemerika-628b15275/' class='c-4') LinkedIn
-          li
-            a(href='https://www.github.com/ihawp' class='c-4') Github
+            a(href='/privacy' class='c-4') Privacy Policy
+    script(src='/javascripts/pug-navigation.js')

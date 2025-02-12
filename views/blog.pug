@@ -1,18 +1,11 @@
 extends layout
 
 block content
-    header(class='mb-2')
-        nav(aria-label='Main Site Navigation')
-            ul(class='flex gap-half list-none p-0')
-                li
-                    a(href='https://www.ihawp.com'
-                        title='Warren Chemerika | ihawp.com'
-                        aria-label='Anchor link to navigate to ihawp.com' class='c-4') Back To Home
-    header(class='mb-1 bg-5 p-1 br-8')
-        h1 Blog for ihawp.com
-    section(class='flex flex-col gap-2 bg-5 p-1 br-8')
-        h2 Recent Posts:
-        ul(class='flex flex-col gap-1')
+    header(class='text-center')
+        h1(class='bg-5 br-4 px-1 mb-1') Blog
+    section(class='flex flex-col gap-1')
+        h2(class='b-only-bottom-1 bc-5 bs-solid pb-1 mb-half') Recent Posts:
+        ul(class='flex flex-col gap-1 disc pl-1-5')
             each item in content
                 li
-                    a(class='c-6' href=`http://localhost:4343/blog/${item.id}`)= item.title
+                    a(href=`/blog/${item.id}`)= item.title
