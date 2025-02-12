@@ -1,27 +1,5 @@
 const express = require('express');
-const path = require("path");
 const router = express.Router();
-
-const { dom, library } = require('@fortawesome/fontawesome-svg-core');
-const { faGithub, faJsSquare } = require('@fortawesome/free-brands-svg-icons');
-const {faUser} = require('@fortawesome/free-solid-svg-icons/faUser');
-
-library.add(faGithub)
-
-let icons = {
-    github: '',
-    link: ''
-}
-
-let languageIcons = {
-    js: '',
-    html: '',
-    css: '',
-    wordpress: '',
-    react: '',
-    node: '',
-    php: ''
-}
 
 const nFetch = require('../middleware/nFetch');
 
@@ -39,7 +17,7 @@ router.get('/', (req, res) => {
 
           console.log(response[0].languages);
 
-          res.render('index', { title: 'Warren Chemerika | ihawp.com', content: response, icons: icons });
+          res.render('index', { title: 'Warren Chemerika | ihawp.com', content: response });
       })
       .catch(error => console.error(error));
 });

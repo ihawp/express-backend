@@ -1,9 +1,9 @@
 doctype html
-html
+html(lang='en')
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(name='author' content='Warren Chemerika | ihawp.com')
     meta(name='description' content='Warren Chemerika | ihawp.com')
     link(rel='icon' href='/public_html/public/shooting-star.webp')
@@ -26,12 +26,10 @@ html
                 a(class='font-weight-700' href='https://www.github.com/ihawp' title='ihawp on GitHub' aria-label='Link to my Github account, my username is ihawp') GitHub
           li
             a(class='bg-3 px-half py-1 br-4 font-weight-600' href='mailto:ihawp@ihawp.com' title='Send me an email (ihawp@ihawp.com)' aria-label='Send me an email now by pressing this button') Contact Me Now
-      nav()
-        ul()
     main(class='flex flex-col items-center')
       block content
     footer(class='flex flex-row items-center justify-between px-1')
-      p(class='c-4') &copy; ihawp 2025.
+      p(class='c-4') &copy; ihawp.com 2025
       nav(aria-label='Footer Navigation')
         ul(class='flex flex-row gap-half')
           li

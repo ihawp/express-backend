@@ -12,9 +12,8 @@ block content
                 let l = new Date(timestamp)
             p(class='c-4')= `${l.getDate()}/${l.getMonth() + 1}/${l.getFullYear()}`
             div
-
                 a(href=`${github}` class='mr-1 c-4 hover-underline') Github
-                a(href=`${url}` class='c-4 hover-underline') Link
+                a(href=`${url}` class='c-4 hover-underline') URL
     section
         div(class='marked flex flex-col')
             each item in content
