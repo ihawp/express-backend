@@ -1,11 +1,11 @@
 extends layout
 
 block content
-    header
+    header.text-center.bg-5.px-half.br-4
         h1= title
-    section
+    section.marked
         h2 Web Development 1:
-        ul(class='disc py-2 px-1')
+        ul
             li
                 a(href='bcit/web-dev-1/a1' title='' aria-label='') assignment-1
             li
@@ -23,7 +23,7 @@ block content
             li
                 a(href='https://www.travelcanada.ihawp.com' title='' aria-label='') country-page
         h2 Web Scripting 1:
-        ul(class='disc py-2 px-1')
+        ul
             li
                 a(href='bcit/web-scripting-1/a1' title='' aria-label='') assignment-1
             li

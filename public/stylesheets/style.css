@@ -452,7 +452,7 @@ li {}
 }
 
 /* list style */
-.disc, div.marked ul {
+.disc, .marked ul {
   list-style: disc;
 }
 
@@ -951,27 +951,21 @@ textarea {
 }
 
 
-/* div.marked */
-div.marked {
-  padding: 0 .5rem 0 .5rem;
-}
-div.marked ol, div.marked ul { padding-left: 1.25rem; line-height: 2rem; }
-div.marked h1 {
+/* .marked */
+.marked ol, .marked ul { padding-left: 1.25rem; line-height: 2rem; }
+.marked h1 {
   font-size: 5rem;
 }
-div.marked h2 {
+.marked h2 {
   border-bottom: 1px solid var(--5);
   padding-bottom: 1rem;
   margin-top: 2rem;
 }
-div.marked h2, div.marked h3, div.marked h4 {
+.marked h2, .marked h3, .marked h4 {
   margin-bottom: .5rem;
 }
-div.marked h3, div.marked h4 {
+.marked h3, .marked h4 {
   margin-top: .5rem;
-}
-div.marked p {
-  text-indent: 2rem;
 }
 
 /* mobile nav */
