@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b45a7e5d-6b73-40b6-a6f2-66b86e11a546" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/bcit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/saskpolytech.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/public_html/public/Front-EndWebDevCertificateWarrenChemerika.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/Front-EndWebDevCertificateWarrenChemerika.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +68,11 @@
       <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\public_html\bcit\ws1-a3-bonus-1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\media" />
       <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\images" />
       <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\public_html\fathers-day\img" />
       <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\fonts" />
       <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\middleware" />
-      <recent name="C:\Users\ihawp\Documents\Everything\Code\untitled3\public\javascripts" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -98,7 +99,7 @@
       <workItem from="1739086531220" duration="96000" />
       <workItem from="1739132410030" duration="20642000" />
       <workItem from="1739206119929" duration="3916000" />
-      <workItem from="1739244236229" duration="51111000" />
+      <workItem from="1739244236229" duration="52845000" />
     </task>
     <servers />
   </component>
