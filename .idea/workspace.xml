@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b45a7e5d-6b73-40b6-a6f2-66b86e11a546" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/Front-EndWebDevCertificateWarrenChemerika.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/assets/Spongeboy Me Bob-BqVwXVyF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/assets/Spongeboy Me Bob-FlIJV5o3.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/assets/Spongeboy Me Bob-Wu8qp0Ed.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/assets/index-BzVRC6me.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/assets/index-Cs-c-B7-.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/ihawpcom-sharing.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ihawpcom-sharing.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/shooting-star.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/public_html/public/w.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +100,8 @@
       <workItem from="1739379259579" duration="11469000" />
       <workItem from="1739393069489" duration="116000" />
       <workItem from="1739397538363" duration="3325000" />
-      <workItem from="1739402810922" duration="251000" />
+      <workItem from="1739402810922" duration="392000" />
+      <workItem from="1739422679997" duration="1499000" />
     </task>
     <servers />
   </component>
