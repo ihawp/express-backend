@@ -25,6 +25,7 @@ html {
   --5: rgb(38,38,38,1);
   --6: rgb(255, 255, 255, 0.3);
   --7: linear-gradient(205deg, #222, #111);
+  --8: rgb(21 128 61);
 }
 
 /* semantics */
@@ -140,6 +141,13 @@ li {}
 .bg-6 {
   background: var(--6);
 }
+.bg-7 {
+  background: var(--7);
+}
+.bg-8 {
+  background: var(--8);
+}
+/* background hover */
 .bg-h-1:hover {
   background: var(--1);
 }
@@ -180,6 +188,12 @@ li {}
 }
 .c-6, .h-c-6:hover {
   color: var(--6);
+}
+.c-7 {
+  color: var(--7);
+}
+.c-8 {
+  color: var(--8);
 }
 
 /* border color */
