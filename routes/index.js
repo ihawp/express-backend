@@ -40,7 +40,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/privacy', (req, res) => {
-    res.render('privacy', {content: 'wow'});
+    res.render('privacy', {title: 'Privacy Policy | ihawp.com'});
 });
 
 module.exports = router;
