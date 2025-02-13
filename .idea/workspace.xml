@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/services.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blog-post.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog-post.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blog.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +109,7 @@
       <workItem from="1739462224629" duration="856000" />
       <workItem from="1739469315461" duration="3837000" />
       <workItem from="1739475125357" duration="28000" />
-      <workItem from="1739476360236" duration="366000" />
+      <workItem from="1739476360236" duration="602000" />
     </task>
     <servers />
   </component>
