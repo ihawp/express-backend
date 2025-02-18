@@ -69,16 +69,13 @@ button, summary, a, .pointer {
 
 /* headings */
 .title {
-  font-size: 2.125rem;
+  font-size: 2.0635rem;
 }
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.234rem;
 }
 .paratitle {
-  font-size: 1rem;
-}
-h1 {
-  color: var(--c-3);
+  font-size: 0.9rem;
 }
 h2 { }
 h3 { }
@@ -176,7 +173,7 @@ li {}
 .c-2, .h-c-2:hover {
   color: var(--c-2);
 }
-.c-3, .h-c-3:hover {
+.c-3, .h-c-3:hover, h1 {
   color: var(--c-3);
 }
 .c-4, .h-c-4:hover {
@@ -487,6 +484,9 @@ li {}
 }
 
 /* padding */
+.p-none, .py-half-s {
+  padding: 0;
+}
 .p-quarter {
   padding: 0.25rem;
 }
@@ -517,19 +517,24 @@ li {}
   padding: 0.5rem 0;
 }
 .px-1 {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .px-2 {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .px-3 {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .px-4 {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .px-5 {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* p y */
@@ -1076,6 +1081,10 @@ textarea {
   }
   .w-half-sm {
     width: 50%;
+  }
+  .py-half-s {
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 }
 @media (min-width: 50em) {

@@ -11,10 +11,10 @@ block content
                 path(d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z")
             | Certified by Saskatchewan Polytechnic
     section(class='flex flex-col gap-1 mx-2')
-        h2(aria-label="Portfolio section: my work and personal projects" hidden) Portfolio
+        h2(id="portfolio" aria-label="Portfolio section: my work and personal projects" hidden) Portfolio
         each item in content
             div(
-                class='project p-1 pb-2 pointer flex flex-col items-center b-only-top-1 bs-solid bc-5' id=`project-${item.id}`)
+                class='project py-half-s px-1 pb-2 pointer flex flex-col items-center b-only-top-1 bs-solid bc-5' id=`project-${item.id}`)
                 div(class='flex justify-between w-full items-center gap-1')
                     div(class='flex gap-1 items-center')
                         svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="25" fill="rgb(99, 99, 99, 0.1)" class='display-sm')
@@ -41,7 +41,7 @@ block content
                             svg(xmlns="http://www.w3.org/2000/svg" fill="var(--c-6)" width="55" height="55" viewBox="0 0 800 600")
                                 path(d=logo)
     section.mb-1
-        h2.text-center.mb-1.bg-5.px-half.br-4 Certifications
+        h2(id="education").bg-5.br-4.text-center.p-half.font-size-2.mb-1 Education
         div.flex.flex-wrap.gap-1
             div.flex.flex-row.flex-grow-1.gap-1
                 img(src='images/bcit.jpg' draggable="false" alt='British Columbia Institute of Technology (BCIT) Logo' title="British Columbia Institute of Technology (BCIT) Logo" width="75" height="75").br-4
