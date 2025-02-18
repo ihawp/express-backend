@@ -107,7 +107,8 @@ html(lang='en')
     main(class='flex flex-col items-center' id="content")
       block content
     footer(class='flex flex-wrap items-center justify-between gap-1 mt-1')
-      p(class='c-4') &copy; ihawp.com 2025
+      p(class='c-4' id="footerYear") &copy; ihawp.com !{new Date().getFullYear()}
+            new Date().getFullYear();
       nav(aria-label='Footer Navigation')
         ul(class='flex flex-row gap-half')
           li
