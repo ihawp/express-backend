@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b45a7e5d-6b73-40b6-a6f2-66b86e11a546" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "22.11.0",
     "javascript.nodejs.core.library.typings.version": "22.13.0",
-    "last_opened_file_path": "C:/Users/ihawp/Documents/Code/web-dev-2-p-1",
+    "last_opened_file_path": "C:/Users/ihawp/Documents/Everything/Code/untitled3",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,7 +109,8 @@
       <workItem from="1739678132702" duration="4311000" />
       <workItem from="1739726157934" duration="3346000" />
       <workItem from="1739764760165" duration="1054000" />
-      <workItem from="1739822158364" duration="797000" />
+      <workItem from="1739822158364" duration="946000" />
+      <workItem from="1739900988606" duration="92000" />
     </task>
     <servers />
   </component>
