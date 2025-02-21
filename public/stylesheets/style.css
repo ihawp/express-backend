@@ -189,6 +189,7 @@ li {}
   color: var(--c-8);
 }
 
+
 /* border color */
 .bc-1 {
   border-color: var(--c-1);
@@ -436,6 +437,9 @@ li {}
 }
 
 /* min height */
+.min-h-full-vh {
+  height: calc(100vh - 88px);
+}
 .min-h-2 {
   min-height: 12.5rem;
 }
@@ -978,6 +982,7 @@ textarea {
 }
 .marked h2, .marked h3, .marked h4 {
   margin-bottom: .5rem;
+  font-weight: 600;
 }
 .marked h3, .marked h4 {
   margin-top: .5rem;
