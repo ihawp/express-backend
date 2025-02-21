@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b45a7e5d-6b73-40b6-a6f2-66b86e11a546" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/bcit.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/bcit.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blog-post.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog-post.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +111,7 @@
       <workItem from="1739764760165" duration="1054000" />
       <workItem from="1739822158364" duration="946000" />
       <workItem from="1739900988606" duration="2765000" />
-      <workItem from="1740095583263" duration="4778000" />
+      <workItem from="1740095583263" duration="5865000" />
     </task>
     <servers />
   </component>
